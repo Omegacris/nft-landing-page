@@ -1,17 +1,22 @@
 /* FONTS */
 
-@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=VT323&family=Press+Start+2P&family=Iceland");
+/* https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap  */
+/* https://fonts.googleapis.com/css2?family=VT323&family=Press+Start+2P&family=Iceland */
 
 /* GLOBAL STYLES */
 
 :root {
-  --font-primary: 'Poppins', sans-serif;
-  --font-secondary: 'Arvo', serif;
-  --font-code: 'Roboto', monospace;
-  --bg-color: #00163f;
+    /* Main Title ("Grillz-Bunny NFT Launch Coming Soon !!") */
+  --font-primary: 'Press Start 2P', sans-serif;  /*  Poppins ; Press Start 2P ; VT323 */
+    /* Secondary Fonts (Countdown, Title description, Join button)  */
+  --font-secondary: 'VT323', serif;  /* Arvo ; VT323 ; Iceland */
+    /* for Code-snippits */
+  --font-code: 'Iceland', monospace;  /* Roboto ; VT323 ; Press Start 2P */
+  --bg-color: #505558;         /* navy 00163f */
   --font-color: #ffffff;
-  --btn-bg-color: #ffffff;
-  --accent-color: #be7efe;
+  --btn-bg-color: #cfa926;     /* white #ffffff */
+  --accent-color: #04adc4;     /* mov #be7efe */
   --header-shadow: #000 0px 0px 5px;
 }
 
@@ -27,7 +32,7 @@ body {
   flex-flow: column;
   height: 100vh;
   color: var(--font-color);
-  font-family: var(--font-primary);
+  font-family: var(--font-primary);  /* default: --font-primary */
 }
 
 .container {
@@ -58,15 +63,15 @@ header .container {
 
 /* BUTTONS */
 
-.btn {
+.btn {   /* Buton Wallet "Connect MetaMask!" */
   display: inline-block;
-  padding: 1rem 2rem;
+  padding: 0.5rem 0.8rem;  /* Box inaltime, latime. Default 1rem 2rem */
   background: var(--btn-bg-color);
   color: var(--accent-color);
   font-family: var(--font-secondary);
   font-style: italic;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-transform: capitalize;
   transition: all 0.3s ease;
   box-shadow: 4px 4px 0 0 var(--accent-color);
@@ -79,16 +84,16 @@ header .container {
   box-shadow: none;
 }
 
-.wallet-btn {
-  border-radius: 5rem;
-  margin-left: 2rem;
+.wallet-btn {  /* Butoane Discord,Twitter, etc */
+  border-radius: 5rem;  /* Box colturi ascutite(px) / rotunjite(rem) */
+  margin-left: 2rem;  /* decalaj spre stanga de la Buton Wallet  */
   border-color: transparent;
 }
 
-.hero-btn {
-  border-radius: 4px;
-  font-size: 1.2rem;
-  padding: 1.5rem 3rem;
+.hero-btn {  /* Buton "JOIN NOW The Bunnyverse Community */
+  border-radius: 3px;  /* Box colturi ascutite(px) / rotunjite(rem) */
+  font-size: 1.7rem;  /* Text Size, default 1.2rem */
+  padding: 1.3rem 2.5rem;  /* Box inaltime, latime. Default 1.5rem 3rem */
 }
 
 /* COUNTDOWN SECTION */
@@ -107,30 +112,30 @@ section {
 
 .countdown ul {
   display: flex;
-  gap: 2rem
+  gap: 2rem  /* Distanta dintre Digits boxes */
 }
 .countdown .clock-item {
   list-style: none;
-  width: 70px;
+  width: 90px;
   height: auto;
 }
 .countdown .clock-item .count-number {
   background: var(--accent-color);
   color: var(--font-color);
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 3rem;  /* Digits size */
+  font-weight: 700;  /* Digits grosime */
   font-family: var(--font-secondary);
-  padding: 1rem;
+  padding: 1rem;  /* Digits text decalaj la dreapta */
   display: inline-block;
   width: 100%;
   text-align: center;
-  line-height: 1;
+  line-height: 1;  /* Digits box height */
   border-radius: 4px 4px 0 0;
 }
-.countdown .clock-item .count-text {
+.countdown .clock-item .count-text {  /* Text: Days/Hour/Min/Sec */
   background: var(--btn-bg-color);
   font-family: var(--font-secondary);
-  font-size: 1.1rem;
+  font-size: 1.6rem;  /* Text Size */
   color: var(--bg-color);
   padding: 0.5rem 0.7rem;
   display: inline-block;
@@ -141,10 +146,19 @@ section {
 }
 
 .countdown h1 {
-  text-shadow: 2px 2px 0 var(--accent-color);
+  text-shadow: 5px 5px 0 var(--accent-color);  /* Grosime Shadow */
   font-style: italic;
-  margin: 2rem 0;
-  font-size: 3.5rem;
+  margin: 2rem 0;  /* Distanta dintre paragrafe */
+  font-size: 2.5rem;  /* Text size for H1, default 3.5rem */
+  text-align: center;
+}
+
+.countdown h2 {  /* e.g. "The new Metaverse's unique..." */
+  font-family: var(--font-secondary);  /* Am adaugat eu extra, sa nu fie default: --font-primary */
+  text-shadow: 2px 2px 0 var(--accent-color);  /* Grosime Shadow */
+  font-style: normal;
+  margin: 0rem 0;  /* Distanta dintre paragrafe, default 2rem */
+  font-size: 2rem;  /* Text size for H2, default 1.5rem */
   text-align: center;
 }
 
@@ -155,11 +169,13 @@ section {
   text-align: center;
 }
 
+
 /* OWNER STYLES */
 
-.owner-status {
+.owner-status {  /* My own middle-Body content style*/
   font-size: 2rem;
   text-align: center;
+  font-family: var(--font-secondary);  /* al 3-lea Font: --font-code */
 }
 
 /* MEDIA QUERIES */
@@ -175,6 +191,9 @@ section {
   }
   .countdown h1 {
     font-size: 2rem;
+  }
+  .countdown h2 {
+    font-size: 1rem;
   }
   .countdown p {
     font-size: 1rem;

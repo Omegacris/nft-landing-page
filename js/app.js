@@ -1,6 +1,6 @@
 // METAMASK CONNECTION
 const TIMEOUT = 1000;
-const COLLECTION_NAME = 'CodeCats';
+const COLLECTION_NAME = 'Grillz-Bunny Rich Club';  /* Am modificat aici */
 let editions = [];
 let dots = 1;
 
