@@ -16,7 +16,7 @@
   --bg-color: #505558;         /* navy 00163f */
   --font-color: #ffffff;
   --btn-bg-color: #cfa926;     /* white #ffffff */
-  --accent-color: #04adc4;     /* mov #be7efe */
+  --accent-color: #04adc4;     /* cyan #04adc4, mov #be7efe */
   --header-shadow: #000 0px 0px 5px;
 }
 
@@ -74,7 +74,7 @@ header .container {
   font-size: 1.5rem;
   text-transform: capitalize;
   transition: all 0.3s ease;
-  box-shadow: 4px 4px 0 0 var(--accent-color);
+  box-shadow: 5px 4px 0 0 var(--accent-color);  /* Dimensiuni shadow cyan */
   cursor: pointer;
   position: relative;
   text-decoration: none;
@@ -91,9 +91,10 @@ header .container {
 }
 
 .hero-btn {  /* Buton "JOIN NOW The Bunnyverse Community */
-  border-radius: 3px;  /* Box colturi ascutite(px) / rotunjite(rem) */
-  font-size: 1.7rem;  /* Text Size, default 1.2rem */
-  padding: 1.3rem 2.5rem;  /* Box inaltime, latime. Default 1.5rem 3rem */
+  border-radius: 4px;  /* Box colturi ascutite(px) / rotunjite(rem) */
+  font-size: 2rem;  /* Text Size, default 1.2rem */
+  padding: 1.0rem 2.2rem;  /* Box inaltime, latime. Default 1.5rem 3rem */
+  box-shadow: 9px 6px 0 0 var(--accent-color);  /* Dimensiuni shadow cyan */
 }
 
 /* COUNTDOWN SECTION */
@@ -173,7 +174,7 @@ section {
 /* OWNER STYLES */
 
 .owner-status {  /* My own middle-Body content style*/
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: center;
   font-family: var(--font-secondary);  /* al 3-lea Font: --font-code */
 }
