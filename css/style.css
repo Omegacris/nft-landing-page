@@ -47,6 +47,7 @@ body {
 
 header {
   box-shadow: var(--header-shadow);
+  align-items: center;
 }
 
 header .container {
