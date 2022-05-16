@@ -12,7 +12,7 @@
     /* Secondary Fonts (Countdown, Title description, Join button)  */
   --font-secondary: 'VT323', serif;  /* Arvo ; VT323 ; Iceland */
     /* for Code-snippits */
-  --font-code: 'Iceland', monospace;  /* Roboto ; VT323 ; Press Start 2P */
+  --font-code: 'Press Start 2P', monospace;  /* Roboto ; Iceland ; Press Start 2P */
   --bg-color: #505558;         /* navy 00163f */
   --font-color: #ffffff;
   --btn-bg-color: #cfa926;     /* white #ffffff */
@@ -20,7 +20,7 @@
   --header-shadow: #000 0px 0px 5px;
 }
 
-* {
+* {   /* Countdown boxes with Numbers and Text days/hour/min/sec */
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -35,7 +35,7 @@ body {
   font-family: var(--font-primary);  /* default: --font-primary */
 }
 
-.container {
+.container {   /* of the body settings above */
   display: flex;
   flex-direction: column;
   max-width: 960px;
@@ -175,13 +175,20 @@ section {
 
 .owner-status {  /* My own middle-Body content style*/
   display: float;
-  font-size: 1.6rem;
-  font-family: var(--font-secondary);  /* al 3-lea Font: --font-code */
+  font-size: 0.8rem;  /* 1.6 rem for  */
+  font-family: var(--font-code);  /* al 3-lea Font: --font-code */
   text-shadow: 3px 3px 0 black;  /* Grosime Shadow */
   text-align: center;
 }
 
-/* MEDIA QUERIES */
+.owner-status p {  /* optiuni aditionale pt "p" fata de ce este deja in .owner-status*/
+  font-size: 0.8rem;
+  font-family: var(--font-code);
+  margin-bottom: 0.6rem;  /* spatiul pana la urmatorul paragraf*/
+  text-align: center;
+}
+
+/* MEDIA QUERIES -  pe ecrane inguste gen Telefon */
 
 @media screen and (max-width: 768px) {  /* 768px */
   .menu {
@@ -196,13 +203,16 @@ section {
     font-size: 2rem;
   }
   .countdown h2 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
   .countdown p {
     font-size: 1.2rem;
   }
   .owner-status {
-    font-size: 1.2rem;
+    font-size: 0.6rem;
+  }
+  .owner-status p {
+    font-size: 0.6rem;
   }
 }
  
