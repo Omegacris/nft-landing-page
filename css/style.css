@@ -195,7 +195,7 @@ section {
     gap: 0.6rem;
     display: flex;
     align-items: center;
-    width: auto;
+    max-width: 768px;
   }
   .wallet-btn {
     margin-left: 0;
