@@ -17,7 +17,7 @@
   --font-color: #ffffff;
   --btn-bg-color: #cfa926;     /* white #ffffff */
   --accent-color: #04adc4;     /* cyan #04adc4, mov #be7efe */
-  --header-shadow: #000 0px 0px 5px;
+  --header-shadow: #000 0px 0px 20px;   /* grosime linie header */
 }
 
 * {   /* Countdown boxes with Numbers and Text days/hour/min/sec */
@@ -50,6 +50,7 @@ header {
 }
 
 header .container {
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
