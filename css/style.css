@@ -38,7 +38,7 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  max-width: 1960px;
+  max-width: 960px;
   margin: 0 auto;
   padding: 1rem 2rem;
 }
@@ -174,14 +174,15 @@ section {
 /* OWNER STYLES */
 
 .owner-status {  /* My own middle-Body content style*/
+  display: float;
   font-size: 1.5rem;
-  text-align: center;
   font-family: var(--font-secondary);  /* al 3-lea Font: --font-code */
+  text-align: center;
 }
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {  /* 768px */
   .menu {
     gap: 1rem;
   }
@@ -197,6 +198,9 @@ section {
     font-size: 1rem;
   }
   .countdown p {
+    font-size: 1rem;
+  }
+  .owner-status {
     font-size: 1rem;
   }
 }
