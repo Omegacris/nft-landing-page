@@ -175,14 +175,14 @@ section {
 
 .owner-status {  /* My own middle-Body content style*/
   display: float;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-family: var(--font-secondary);  /* al 3-lea Font: --font-code */
   text-align: center;
 }
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 960px) {  /* 768px */
+@media screen and (max-width: 768px) {  /* 768px */
   .menu {
     gap: 1rem;
   }
@@ -198,10 +198,10 @@ section {
     font-size: 1.5rem;
   }
   .countdown p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .owner-status {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
  
