@@ -50,9 +50,9 @@ header {
 }
 
 header .container {
-  display: flex;
   flex-direction: row;
   justify-content: space-between;
+  max-width: 960px;
   align-items: center;
 }
 
