@@ -156,7 +156,7 @@ section {
 
 .countdown h2 {  /* e.g. "The new Metaverse's unique..." */
   font-family: var(--font-secondary);  /* Am adaugat eu extra, sa nu fie default: --font-primary */
-  text-shadow: 2px 2px 0 var(--accent-color);  /* Grosime Shadow */
+  text-shadow: 3px 2px 0 var(--accent-color);  /* Grosime Shadow */
   font-style: normal;
   margin: 0rem 0;  /* Distanta dintre paragrafe, default 2rem */
   font-size: 2rem;  /* Text size for H2, default 1.5rem */
@@ -177,6 +177,7 @@ section {
   display: float;
   font-size: 1.6rem;
   font-family: var(--font-secondary);  /* al 3-lea Font: --font-code */
+  text-shadow: 3px 3px 0 black;  /* Grosime Shadow */
   text-align: center;
 }
 
