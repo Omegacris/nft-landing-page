@@ -174,17 +174,16 @@ section {
 /* OWNER STYLES */
 
 .owner-status {  /* My own middle-Body content style*/
-  display: float;
   font-size: 0.8rem;  /* 1.6 rem for  */
   font-family: var(--font-code);  /* al 3-lea Font: --font-code */
-  text-shadow: 3px 3px 0 black;  /* Grosime Shadow */
+  text-shadow: 2px 2px 0 black;  /* Grosime Shadow */
   text-align: center;
 }
 
 .owner-status p {  /* optiuni aditionale pt "p" fata de ce este deja in .owner-status*/
   font-size: 0.8rem;
   font-family: var(--font-code);
-  margin-bottom: 0.6rem;  /* spatiul pana la urmatorul paragraf*/
+  margin-bottom: 2rem;  /* spatiul pana la urmatorul paragraf*/
   text-align: center;
 }
 
@@ -193,9 +192,6 @@ section {
 @media screen and (max-width: 768px) {  /* 768px */
   .menu {
     gap: 0.6rem;
-    display: flex;
-    align-items: center;
-    max-width: 768px;
   }
   .wallet-btn {
     margin-left: 0;
