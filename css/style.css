@@ -52,7 +52,6 @@ header {
 header .container {
   flex-direction: row;
   justify-content: space-between;
-  max-width: 960px;
   align-items: center;
 }
 
@@ -194,6 +193,8 @@ section {
 @media screen and (max-width: 768px) {  /* 768px */
   .menu {
     gap: 0.6rem;
+    display: flex;
+    align-items: center;
   }
   .wallet-btn {
     margin-left: 0;
